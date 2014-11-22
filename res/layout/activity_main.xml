@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#222222"
+    android:orientation="vertical" >
+	
+    <!-- scroll container -->
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <GridLayout
+                android:id="@+id/menu_grid"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:columnCount="2"
+	            android:orientation="horizontal" >
+					
+               	<LinearLayout 
+	                android:id="@+id/menu_box_1"
+	                android:layout_width="0dp"
+	                android:layout_height="250dp"
+					android:layout_gravity="fill_horizontal"
+					android:orientation="horizontal">
+               
+	                <LinearLayout 
+	                    android:id="@+id/anim_menu_box_1"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:orientation="horizontal">
+                   		
+	                    <ImageButton
+		                    android:id="@+id/anim_1_btn_1"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="250dp"
+		                    android:onClick="gotoAddNewWord"
+		                    android:tag="@drawable/add_btn"
+		                    android:background="@drawable/add_btn" />
+	                    
+	                    <ImageButton
+		                    android:id="@+id/anim_1_btn_2"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="250dp"
+		                    android:onClick="gotoAddNewWord"
+		                    android:tag="@drawable/add_btn"
+		                    android:background="@drawable/add_btn" />
+	                    
+                   	</LinearLayout>
+           		</LinearLayout>
+                    
+	            <LinearLayout 
+	                android:id="@+id/menu_box_2"
+	                android:layout_width="150dp"
+	                android:layout_height="400dp"
+	                android:layout_rowSpan="3"
+					android:orientation="horizontal">
+               
+	                <LinearLayout 
+	                    android:id="@+id/anim_menu_box_2"
+	                    android:layout_width="300dp"
+	                    android:layout_height="400dp"
+	                    android:orientation="horizontal"
+	                    android:layout_marginLeft="-150dp">     
+	          
+		                <ImageButton
+		                    android:id="@+id/anim_2_btn_1"
+		                    android:layout_width="150dp"
+		                    android:layout_height="400dp"
+		                    android:tag="@drawable/test_btn"
+		                    android:onClick="gotoTest"
+		                    android:background="@drawable/test_btn" />
+		                
+		                <ImageButton
+		                    android:id="@+id/anim_2_btn_2"
+		                    android:layout_width="150dp"
+		                    android:layout_height="400dp"
+		                    android:onClick="gotoTest"
+		                    android:tag="@drawable/test_btn"
+		                    android:background="@drawable/test_btn" />
+		                
+					</LinearLayout>
+           		</LinearLayout>   
+	            
+	            <LinearLayout 
+	                android:id="@+id/menu_box_3"
+	                android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="fill_horizontal"
+					android:orientation="vertical">
+               
+	                <LinearLayout 
+	                    android:id="@+id/anim_menu_box_3"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="300dp"
+	                    android:orientation="vertical">  
+	                    
+		                <ImageButton
+		                    android:id="@+id/anim_3_btn_1"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="150dp"
+		                    android:onClick="gotoLearning"
+		                    android:tag="@drawable/learning_btn"
+		                    android:background="@drawable/learning_btn" />
+		                
+		                <ImageButton
+		                    android:id="@+id/anim_3_btn_2"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="150dp"
+		                    android:onClick="gotoLearning"
+		                    android:tag="@drawable/learning_btn"
+		                    android:background="@drawable/learning_btn" />
+		                
+		            </LinearLayout>
+           		</LinearLayout> 
+	                
+	        </GridLayout>
+	        
+            <LinearLayout 
+                android:id="@+id/menu_box_4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+				android:layout_below="@id/menu_grid"
+				android:orientation="vertical">
+                
+                <LinearLayout 
+                    android:id="@+id/anim_menu_box_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="-150dp">
+	                
+                    <ImageButton
+		                android:id="@+id/anim_4_btn_1"
+		            	android:layout_width="match_parent"
+		            	android:layout_height="150dp"
+						android:onClick="gotoSetting"
+		            	android:tag="@drawable/setting_btn"
+		                android:background="@drawable/setting_btn" />
+                    
+                    <ImageButton
+		                android:id="@+id/anim_4_btn_2"
+		            	android:layout_width="match_parent"
+		            	android:layout_height="150dp"
+						android:onClick="gotoSetting"
+						android:tag="@drawable/setting_btn"
+		                android:background="@drawable/setting_btn" />
+	                
+                </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/menu_box_4"
+                android:orientation="horizontal">
+                
+                <LinearLayout 
+	                android:id="@+id/menu_box_5"
+	                android:layout_width="0dp"
+	                android:layout_height="130dp"
+					android:layout_weight="1.8"
+					android:orientation="horizontal">
+                
+	                <LinearLayout 
+	                    android:id="@+id/anim_menu_box_5"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="130dp"
+	                    android:orientation="horizontal">
+		                
+		                <ImageButton
+		                    android:id="@+id/anim_5_btn_1"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="130dp"
+		                    android:onClick="gotoContactUs"
+		                    android:tag="@drawable/contact_btn"
+		                    android:background="@drawable/contact_btn" /> 
+		                    
+		                 <ImageButton
+		                    android:id="@+id/anim_5_btn_2"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="130dp"
+		                    android:onClick="gotoContactUs"
+		                    android:tag="@drawable/contact_btn"
+		                    android:background="@drawable/contact_btn" /> 
+	                    
+	                </LinearLayout>
+	            </LinearLayout>
+	            
+                <LinearLayout 
+	                android:id="@+id/menu_box_6"
+	                android:layout_width="0dp"
+	                android:layout_height="130dp"
+                    android:layout_weight="3"
+					android:orientation="horizontal">
+                
+	                <LinearLayout 
+	                    android:id="@+id/anim_menu_box_6"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="130dp"
+	                    android:orientation="horizontal">
+		                
+		                <ImageButton
+		                    android:id="@+id/anim_6_btn_1"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="130dp"
+		                    android:onClick="gotoAbout"
+		                    android:tag="@drawable/about_btn"
+		                    android:background="@drawable/about_btn" />
+		                
+		                <ImageButton
+		                    android:id="@+id/anim_6_btn_2"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="130dp"
+		                    android:onClick="gotoAbout"
+		                    android:tag="@drawable/about_btn"
+		                    android:background="@drawable/about_btn" />
+		                
+                 	</LinearLayout>
+	            </LinearLayout>
+	            
+            </LinearLayout>
+            
+        </RelativeLayout>
+
+    </ScrollView>
+   	    
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wordify</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	
+    <!-- header text -->
+    <string name="header_text">Wordify</string>
+ 
+    <!-- colors -->
+    <string name="bg_color">#222222</string>
+    
+    <!-- notice -->
+    <string name="notice_conntection_failed">Internet Not Connected.</string>
+    <string name="notice_notice_found">No Item Found.</string>
+    
+    <!-- add new word activity -->
+    <string name="add_new_word">Add New Word</string>
+    <string name="pc_word">Word</string>
+    <string name="pc_meaning">Meaning</string>
+    <string name="nw_note">Please use "," coma seprated to multiple meaning</string>
+    <string name="nw_add_btn">Add</string>
+    <string name="nw_cancel_btn">Cancel</string>
+    
+    <!-- test word activity -->
+    <string name="test_heading">Test</string>
+    <string name="t_pc_Meaning">Meaning</string>
+    <string name="t_check_btn">Check</string>
+    
+    <!-- setting activity -->
+    <string name="setting_heading">Setting</string>
+    <string name="set_txt_admin_enable">Admin Access</string>
+    <string name="set_txt_test_switch">Test Online | Offline</string>
+    <string name="set_txt_notification">Notification</string>
+    <string name="set_txt_anim_menu">Select Tile Animation</string>
+    
+    <!-- dictionary activity -->
+    <string name="dic_heading">Learning</string>
+    <string name="dic_word_label">Word</string>
+    <string name="dic_meaning_label">Meaning</string>
+    <string name="dic_menu_search">Search</string>
+    
+    <!-- about activity -->
+    <string name="about_heading">About</string>
+    <string name="about_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel sodales metus, sit amet blandit neque. Morbi efficitur, erat eu luctus tincidunt, nibh purus venenatis mi, id ornare quam elit eget orci. Pellentesque id turpis erat. Maecenas eu neque ac sapien pulvinar interdum non sit amet nibh. Pellentesque egestas nisi id nulla semper congue. Ut scelerisque in purus vitae condimentum. Nulla volutpat, massa at pulvinar laoreet, velit nisl lacinia enim, in lobortis mi leo in sem. Pellentesque ut sagittis lectus. Fusce est lectus, condimentum a tempor tristique, aliquam eu quam. </string>
+    
+    <!-- stats activity -->
+    <string name="stats_heading">Stats</string>
+    
+    <!-- contact us activity -->
+    <string name="contact_heading">Contact Us</string>
+    <string name="cu_detail">Name: Syed Owais Ali\nPhone: +92 312 2672245\nEmail: paulalin.circle@gmail.com</string>
+    <string name="cu_cnb">Call Now</string>
+    
+    <string name="translate_heading">Translate</string>
+    <string name="btn_translate">Translate</string>
+    
+    <!-- hints -->
+    <string name="search_hint">Type word or meaning&#8230;</string>
+    <string name="admin_login_email_hint">Email</string>
+    <string name="admin_login_pass_hint">Password</string>
+    <string name="translate_hint">Type word</string>
+    
+</resources>

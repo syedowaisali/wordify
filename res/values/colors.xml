@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <color name="dark_red">#bc0202</color>
+    <color name="red">#ff0000</color>
+    <color name="dark_green">#00b33f</color>
+    <color name="green">#00f657</color>
+    <color name="dark_blue">#006abc</color>
+    <color name="blue">#008cf8</color>
+    <color name="dark_royal_blue">#142692</color>
+    <color name="royal_blue">#3c3cb3</color>
+    
+    <color name="tile_add_color">#3cb371</color>
+    <color name="dark_tile_add_color">#14924c</color>
+    
+    <color name="tile_test_color">#e03a5b</color>
+    <color name="dark_tile_test_color">#c41d3e</color>
+    
+    <color name="tile_learning_color">#fdb83b</color>
+    <color name="dark_tile_learning_color">#d79723</color>
+    
+    <color name="tile_setting_color">#fd856f</color>
+    <color name="dark_tile_setting_color">#c95b47</color>
+    
+    <color name="tile_stats_color">#169595</color>
+    <color name="dark_tile_stats_color">#0b6868</color>
+    
+    <color name="tile_about_color">#a937e2</color>
+    <color name="dark_tile_about_color">#681193</color>
+    
+    <color name="tile_translate_color">#3c3cb3</color>
+    <color name="dark_tile_translate_color">#142692</color>
+    
+    <color name="cu_color">#0b6868</color>
+    <color name="cu_hover_color">#169595</color>
+    
+</resources>

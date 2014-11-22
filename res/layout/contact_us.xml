@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+    
+    <LinearLayout 
+        android:id="@+id/sc_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/activity_splash"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:visibility="visible"
+	        android:background="@drawable/contact" />
+
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="#222222"
+		    android:orientation="vertical" >
+
+		    <!-- stats box -->
+		    <LinearLayout
+		        android:id="@+id/contact_head_box"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_centerHorizontal="true"
+		        android:background="#272727"
+		        android:paddingTop="20dp"
+		        android:paddingBottom="20dp">
+		        
+		        <TextView
+		            android:id="@+id/heading"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/contact_heading"
+		            android:textColor="#868686"
+		            android:layout_gravity="center"
+		            android:textSize="30sp" />
+				
+		    </LinearLayout>
+		    
+			<LinearLayout
+	            android:id="@+id/stats_box"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+				android:layout_marginBottom="8dp"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="20dp"
+	            android:layout_below="@id/contact_head_box"
+	            android:orientation="vertical" >
+		        
+			    <TextView 
+			        android:id="@+id/score_chart_view"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#ffffff"
+			        android:textSize="20sp"
+			        android:text="@string/cu_detail"/>
+			    
+			    <Button 
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:padding="10dp"
+			        android:background="@drawable/call_now_btn"
+			        android:textColor="#ffffff"
+			        android:textSize="25sp"
+			        android:onClick="callNow"
+			        android:layout_marginTop="20dp"
+			        android:text="@string/cu_cnb" />
+		            
+	        </LinearLayout>
+		   	<LinearLayout
+		   	    android:id="@+id/footer_bar"
+		   	    android:layout_width="fill_parent"
+		   	    android:layout_height="8dp"
+		   	    android:orientation="vertical"
+		   	    android:layout_alignParentBottom="true"
+		   	    android:background="#0b6868" ></LinearLayout>
+		   	    
+		    
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+    
+    <LinearLayout 
+        android:id="@+id/sc_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/activity_splash"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:visibility="visible"
+	        android:background="@drawable/setting" />
+	
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="#222222"
+		    android:orientation="vertical" >
+
+		    <!-- test box -->
+		    <LinearLayout
+		        android:id="@+id/setting_head_box"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_centerHorizontal="true"
+		        android:background="#272727"
+		        android:paddingTop="20dp"
+		        android:paddingBottom="20dp">
+		        
+		        <TextView
+		            android:id="@+id/heading"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/setting_heading"
+		            android:textColor="#868686"
+		            android:layout_gravity="center"
+		            android:textSize="30sp" />
+		
+		    </LinearLayout>
+		    
+		    <!-- Container -->
+		    <ScrollView
+		        android:id="@+id/setting_scroll"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_below="@id/setting_head_box" >
+		        
+		        <!-- Block -->
+		        <LinearLayout 
+		            android:id="@+id/setting_box"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10dp"
+		            android:layout_marginRight="10dp"
+		            android:layout_marginTop="20dp"
+		            android:layout_marginBottom="20dp"
+		            android:orientation="vertical">
+		            
+		            <!-- Rows 1 ================================================================================================ -->
+		
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:background="#b24c4c"
+		                android:orientation="vertical"
+		                android:padding="10dp" >
+		                
+		                <RelativeLayout 
+		                    android:layout_width="match_parent"
+		                    android:layout_height="match_parent">
+		                    
+		                    <TextView
+		                        android:id="@+id/set_admin_enable_txt"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:text="@string/set_txt_admin_enable"
+		                        android:layout_centerVertical="true"
+		                        android:textColor="#ffffff" />
+		                    
+		                    <ToggleButton 
+		                        android:id="@+id/toggle_admin_enable_btn"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:textOn="ON"
+		                        android:textOff="OFF"
+		                        android:layout_centerVertical="true"
+		                        android:onClick="toggleAdminAccess"
+		                        android:layout_alignParentRight="true"/>
+		                    
+		                </RelativeLayout>
+		                
+		            </LinearLayout>
+		            
+		            <!-- Rows 2 ================================================================================================ -->
+		
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:background="#b86262"
+		                android:orientation="vertical"
+		                android:padding="10dp" >
+		                
+		                <RelativeLayout 
+		                    android:layout_width="match_parent"
+		                    android:layout_height="match_parent">
+		                    
+		                    <!-- <TextView
+		                        android:id="@+id/set_test_switch_txt"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:text="@string/set_txt_test_switch"
+		                        android:layout_centerVertical="true"
+		                        android:textColor="#ffffff" /> -->
+		                    
+		                    <ToggleButton
+		                        android:id="@+id/toggle_test_switch_btn"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="wrap_content"
+		                        android:layout_centerVertical="true"
+		                        android:checked="false"
+		                        android:onClick="toggleTest"
+		                        android:textOff="Offline Test"
+		                        android:textOn="Online Test" />
+		                    
+		                </RelativeLayout>
+		                
+		            </LinearLayout>
+		            
+		             <!-- Rows 3 ================================================================================================ -->
+		             
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:background="#b24c4c"
+		                android:orientation="vertical"
+		                android:padding="10dp" >
+		                
+		                <RelativeLayout 
+		                    android:layout_width="match_parent"
+		                    android:layout_height="match_parent">
+		                    
+		                    <TextView
+		                        android:id="@+id/set_notification_txt"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:text="@string/set_txt_notification"
+		                        android:layout_centerVertical="true"
+		                        android:textColor="#ffffff" />
+		                    
+		                    <ToggleButton 
+		                        android:id="@+id/toggle_notification_btn"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:textOn="ON"
+		                        android:textOff="OFF"
+		                        android:onClick="toggleNotification"
+		                        android:layout_centerVertical="true"
+		                        android:layout_alignParentRight="true"/>
+		                    
+		                </RelativeLayout>
+		                
+		            </LinearLayout>
+		            
+		            <!-- Rows 4 ================================================================================================ -->
+		
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:background="#b86262"
+		                android:orientation="vertical"
+		                android:padding="10dp" >
+		                
+		                <RelativeLayout 
+		                    android:layout_width="match_parent"
+		                    android:layout_height="match_parent">
+		                    
+		                    <TextView
+		                        android:id="@+id/set_menu_anim_txt"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:layout_centerHorizontal="true"
+		                        android:text=""
+		                        android:textColor="#ffffff" />
+		                    
+		                    <Button 
+		                        android:id="@+id/set_menu_anim_btn"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="wrap_content"
+		                        android:layout_marginTop="10dp"
+		                        android:layout_below="@id/set_menu_anim_txt"
+		                        android:textSize="14sp"
+		                        android:text="@string/set_txt_anim_menu"
+		                        android:onClick="setMenuAnim" />
+		                   
+		                </RelativeLayout>
+		                
+		            </LinearLayout>
+		            
+		        </LinearLayout>
+		        
+		    </ScrollView>
+			
+		   	<LinearLayout
+		   	    android:id="@+id/footer_bar"
+		   	    android:layout_width="fill_parent"
+		   	    android:layout_height="8dp"
+		   	    android:orientation="vertical"
+		   	    android:layout_alignParentBottom="true"
+		   	    android:background="#c95b47" ></LinearLayout>
+		   	    
+		    
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

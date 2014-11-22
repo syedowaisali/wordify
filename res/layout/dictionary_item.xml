@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#222222"
+    android:id="@+id/item_block"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/blue_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:background="#25a0ff">
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/word_box"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/blue_bar">
+        
+        <TextView
+	        android:id="@+id/dic_word_label"
+	        android:layout_width="80dp"
+	        android:layout_height="50dp"
+	        android:textSize="15sp"
+	        android:gravity="center"
+	        android:background="#343434"
+	        android:text="@string/dic_word_label"
+	        android:textColor="#868686" />
+	    
+        <RelativeLayout
+	        android:id="@+id/dic_word_box"
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+	        
+            <TextView
+		        android:id="@+id/dic_word"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textSize="15sp"
+		        android:paddingTop="10dp"
+		        android:paddingLeft="10dp"
+		        android:paddingBottom="10dp"
+		        android:layout_marginRight="25dp"
+		        android:text="Day"
+		        android:textColor="#ffffff" />
+	            
+	        <ImageView
+	            android:id="@+id/item_check"
+	            android:layout_width="20dp"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="10dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:tag="check_out"
+	            android:visibility="visible"
+	            android:src="@drawable/ic_checkout" />
+	        
+	    </RelativeLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/sep"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#5b5b5b"
+        android:orientation="horizontal"
+        android:layout_below="@id/word_box" >
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/meaning_box"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/sep" >
+        
+        <TextView
+	        android:id="@+id/dic_meaning_label"
+	        android:layout_width="80dp"
+	        android:layout_height="match_parent"
+	        android:textSize="15sp"
+	        android:gravity="center"
+	        android:background="#343434"
+	        android:text="@string/dic_meaning_label"
+	        android:textColor="#868686" />
+        
+        <RelativeLayout
+	        android:id="@+id/dic_meaning_box"
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" > 
+	        
+	        <TextView
+		        android:id="@+id/dic_meaning"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="10dp"
+		        android:textSize="15sp"
+		        android:text=""
+		        android:layout_marginRight="25dp"
+		        android:textColor="#ffffff" />
+	        
+	        <ImageView
+	            android:id="@+id/item_notify"
+	            android:layout_width="20dp"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="10dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:tag="check_out"
+	            android:visibility="visible"
+	            android:src="@drawable/notify_off" />
+        
+		</RelativeLayout>
+    </LinearLayout>
+    
+    
+    
+    
+</RelativeLayout>
